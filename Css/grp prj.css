@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+html,body{
+    padding: 0;
+    margin: 0;
+}
 body {
     position: relative;
     overflow-x: hidden;
@@ -11,7 +14,8 @@ body {
 
 .size {
     font-size: 20px;
-    padding: 0px;
+    padding: 0%;
+    width: 100%;
 }
 
 .i1 {
@@ -322,6 +326,10 @@ body {
     .line2 {
         border-bottom: 2px solid rgb(122, 120, 120);
     }
+    .back-img
+    {
+        height: 1000px;
+    }
 }
 
 .carousel-indicato {
@@ -337,6 +345,10 @@ body {
     margin-bottom: 1rem;
     margin-left: 15%;
     list-style: none;
+}
+.opac{
+    height: 50px;
+    width: 100px;
 }
 
 .opac:hover {
@@ -366,11 +378,7 @@ body {
     background: #fff;
 }
 
-@media only screen and (max-width:576px) {
-    .set {
-        margin: auto;
-    }
-}
+
 
 .jinay {
     height: 100px;
@@ -400,4 +408,20 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+@media only screen and (max-width:576px) {
+    .set {
+        margin: auto;
+    }
+    .medimg,.smallimg{
+        border-radius: 7px;
+    }
+    .carousel-indicato{
+        left: 10%;
+    }
+    .opac{
+        width: 30px;
+        height: 30px;
+    }
 }

@@ -32,18 +32,16 @@
 
         .col1 {
             background-color: #EFEFEF;
-            width: 50%;
+            width: 70%;
             border-radius: 30px;
             padding: 30px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin-top:7.5%;
+            margin-left:25%;
         }
 
-        .col2 {
-            background-color: #EFEFEF;
-            width: 50%;
-            border-radius: 30px;
-            padding: 30px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .col1:hover {
+            background-color: #F8F8FF;
         }
 
         .b2 {
@@ -79,6 +77,7 @@
         }
 
         .line1:hover {
+            padding: 10px 20px 10px 20px;
             border-bottom: 4px solid #0072b1;
         }
 
@@ -102,7 +101,6 @@
         .desin {
             background-color: #5bb9ec;
             border-radius: 30px;
-
         }
 
         .nav-pills .nav-link.active {
@@ -135,13 +133,57 @@
             color: white;
             background-color: #0072b1;
         }
+
+        .sidebar{
+            width: 20%;
+            height: 100vh;
+            background-color:white
+        }
+
+        .result{
+            height:340px;
+            width:425px;
+        }
+
+        .lectures{
+            margin-bottom:53%;
+        }
+        .lectures:hover{
+            margin-bottom: 53%;
+        }
+        .logout{
+            margin-top:100%;
+        }
+
+        @media only screen and (max-width:600px) {
+            .sidebar{
+                width: 100%;
+                height: 40vh;
+            }
+            .col1{
+                width: 90%;
+                margin-left: 5%;
+            }
+            .result{
+                width: 100%;
+                height: 90%;
+            }
+            .lectures,.logout{
+                margin: 0;
+                padding: 10px 20px 10px 20px;
+            }
+            .lectures:hover{
+                margin-bottom: 4%;
+            }
+        }
+        
     </style>
 </head>
 
 <body data-bs-spy="scroll">
     <!-- navbar -->
     <div class="row">
-        <div class="col-sm-4" style="width:20%;height:100vh;background-color:white;">
+        <div class="col-sm-4 sidebar">
             <div class="container-fluid">
                 <ul class="nav nav-pills flex-column align-items-center justify-content-center">
                     <div style="margin-left:7%;margin-bottom:4%;">
@@ -167,13 +209,13 @@
                                 style="color: #0072b1;">Notes</a>
                         </li>
                     </div>
-                    <div class="line1" style="margin-bottom:53%;">
+                    <div class="lectures line1">
                         <li class="nav-item" style="width: max-content;">
                             <a class="nav-link size" data-bs-toggle="pill" href="#demo4" style="color: #0072b1;">Video
                                 Lectures</a>
                         </li>
                     </div>
-                    <div style="margin-top:100%;">
+                    <div class="logout">
                         <a href="grp prj.html" class="no-line"><button class="b2 size"
                                 style="width:100%;margin-left:6%;">LOG
                                 OUT</button></a>
@@ -186,7 +228,7 @@
         <div class="col-sm-8">
             <div class="tab-content">
                 <div id="demo1" class="tab-pane container-fluid active show fade">
-                    <div class="col1" style="margin-top:7.5%;margin-left:25%;width:70%">
+                    <div class="col1">
                         <h1 class="display-4 text-center" style="font-weight: bold;">Personal Details</h1>
                         <hr class="hr" color="black">
                         <div style="font-size:25px;font-weight:300">
@@ -227,20 +269,15 @@
             </div>
             <div class="tab-content">
                 <div id="demo2" class="tab-pane container-fluid fade">
-                    <div class="col2" style="margin-top:10%;margin-left:11%;width:100%">
+                    <div class="col1" >
 
                         <h1 class="display-4 text-center" style="font-weight: bold;">Result</h1>
                         <hr class="hr" color="black">
                         <div class="row">
-                            <div class="col-sm-6" style="font-size:25px;font-weight:300">
+                            <div style="font-size:25px;font-weight:300">
                                 SEM-1 : <a href="../Assets/Pdf/Screenshot_20230301_204820.pdf"><img
                                         src="../Assets/Images/Screenshot_20230301_204820.png" target="_blank"
-                                        height="340px" width="425px" style="border-radius:10px;"></a>
-                            </div>
-                            <div class="col-sm-6" style="font-size:25px;font-weight:300">
-                                SEM-2 : <a href="../Assets/Pdf/Screenshot_20230301_204820.pdf"><img
-                                        src="../Assets/Images/Screenshot_20230301_204820.png" target="_blank"
-                                        height="340px" width="425px" style="border-radius:10px;"></a>
+                                        class="result" style="border-radius:10px;"></a>
                             </div>
                         </div>
                     </div>
@@ -248,26 +285,28 @@
             </div>
             <div class="tab-content">
                 <div id="demo3" class="tab-pane container-fluid fade">
-                    <div class="col2" style="margin-top:32%;margin-left: 26%;width:70%;">
+                    <div class="col1">
                         <div class="row">
                             <div class="col-sm-9">
                                 <h1 style="font-weight: 500;">Click here to see Notes:</h1>
                             </div>
                             <div class="col-sm-3" style="margin-top:1%;">
-                                <a href="note.html" class="no-line"><button class="justify-content-center c2">Click</button></a>
+                                <a href="note.html" class="no-line"><button
+                                        class="justify-content-center c2">Click</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-content">
                     <div id="demo4" class="tab-pane container-fluid fade">
-                        <div class="col2" style="margin-top:32%;margin-left: 26%;width:70%;">
+                        <div class="col1">
                             <div class="row">
                                 <div class="col-sm-9">
                                     <h1 style="font-weight: 500;">Click here to see Videos:</h1>
                                 </div>
                                 <div class="col-sm-3" style="margin-top:1%;">
-                                    <a href="videos.html" class="no-line"><button class="justify-content-center c2">Click</button></a>
+                                    <a href="videos.html" class="no-line"><button
+                                            class="justify-content-center c2">Click</button></a>
                                 </div>
                             </div>
                         </div>
