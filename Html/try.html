@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10fc4481de.js" crossorigin="anonymous"></script>
+    <link href="../Css/grp prj.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@600&display=swap');
+            body
+            {
+                        font-family:'Source Sans Pro',sans-serif;
+                        position:relative;
+            }
+            .line
+            {
+                        background-color: white;
+            }
+            .size
+            {
+                        font-size:20px;
+                        padding:0px;
+            }
+            .col1
+            {
+                background-color:#d4d4d4;
+                width:50%;
+                border-radius:30px;
+                padding:30px;
+                box-shadow:10px 10px 10px grey;
+            }
+            .col2
+            {
+                background-color:#94c8e3;
+                width:50%;
+                border-radius:30px;
+                padding:30px;
+                box-shadow:10px 10px 10px grey;
+            }
+            .b2
+            {
+                        border:2px solid white;
+                        background-color:white;
+                        margin-right:5px;
+                        border-radius:7px;
+                        height:40px;
+                        width:140%;
+                        font-size:18px;
+                        padding:7px 24px;
+                        font-weight:bold;
+                        color:#0072b1;
+            }
+            .b2:hover
+            {
+                        border:3px solid white;
+                        color:white;
+                        background-color:#0072b1;
+            }
+            .img
+            {
+                        padding-right:27px;
+                        padding-left:27px;
+                        padding-top:4px;
+                        background-color:white;
+            }
+            .line1
+            {
+                        padding:10px 20px 10px 20px;
+            }
+            .line1:hover
+            {
+                        border-bottom:4px solid white;
+                        margin-bottom:0px;
+                        padding-bottom:0px;
+            }
+            .a
+            {
+                color:white;
+            }
+            .a:hover
+            {
+                color:white;
+            }
+            .hr
+            {
+                color:black;
+                padding:1px;
+            }
+            .bold
+            {
+                font-weight:bold;
+            }
+            .desin
+            {
+                background-color:#5bb9ec;
+                border-radius:30px;
+                
+            }
+            .nav-pills .nav-link.active
+            {
+                background-color:transparent;
+                color:white;
+                font-weight:bold;
+            }
+            .nav-pills .nav-link 
+            {
+                color:white;
+            }
+            .c2
+            {
+                        border:2px solid white;
+                        background-color:white;
+                        margin-right:5px;
+                        border-radius:7px;
+                        height:40px;
+                        width:max-content;
+                        font-size:20px;
+                        padding:7px 24px;
+                        font-weight:bold;
+                        color:#0072b1;
+            }
+            .c2:hover
+            {
+                        border:3px solid white;
+                        color:white;
+                        background-color:#0072b1;
+            }
+    </style>
+</head>
+<body data-bs-spy="scroll">
+    <!-- navbar -->
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" style="width:20%;height:100vh;background-color:#0072b1;">
+            <div class="container-fluid">
+                <ul class="nav nav-pills flex-column">
+                    <div style="margin-left:7%;margin-bottom:4%;">
+                        <div class="img">
+                            <img src="../Assets/Images/logo.png" style="height:50px;margin-bottom:5%;"/>
+                        </div>
+                    </div>
+                    <div class="line1">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link active size" data-bs-toggle="pill" href="#demo1">Personal Details</a>
+                        </li>
+                    </div>
+                    <div class="line1">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link size" data-bs-toggle="pill" href="#demo2">Result</a>
+                        </li>
+                    </div>
+                    <div class="line1">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link size" data-bs-toggle="pill" href="#demo3">Notes</a>
+                        </li>
+                    </div>
+                    <div class="line1" style="margin-bottom:53%;">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link size" data-bs-toggle="pill" href="#demo4">Video Lectures</a>
+                        </li>
+                    </div>
+                    <div style="margin-top:100%;">
+                        <a href="grp prj.html"><button class="b2 size" style="width:95%;margin-left:3%;">LOG OUT</button></a>
+                    </div>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6">
+            <div class="tab-content">
+                <div id="demo1" class="tab-pane container-fluid active show fade">
+                    <div class="col1" style="margin-top:7.5%;margin-left:25%;width:70%">
+                        <h1 class="display-4 text-center">Personal Details</h1>
+                        <hr class="hr" color="black">
+                        <div style="font-size:25px;">
+                            Name:               Archie Andrews
+                        </div>
+                        <div style="font-size:25px;">
+                            Age:                20
+                        </div>
+                        <div style="font-size:25px;">
+                            Gender:             Male
+                        </div>
+                        <div style="font-size:25px;">
+                            Batch:             C1
+                        </div>
+                        <div style="font-size:25px;">
+                            Year:             2021
+                        </div>
+                        <div style="font-size:25px;">
+                            Institute:         Engineering & Technology    
+                        </div>
+                        <div style="font-size:25px;">
+                            Address:            A/104, Maple Tree, Thaltej, Ahmedabad
+                        </div>
+                        <div style="font-size:25px;">
+                            Contact No:             9999999999
+                        </div>
+                        <div style="font-size:25px;">
+                            Email:             xyz@gmail.com
+                        </div>
+                        <div style="font-size:25px;">
+                            10<sup>th</sup> Qualification:      Qualified
+                        </div>
+                        <div style="font-size:25px;">
+                            12<sup>th</sup> Qualification:      Qualified
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="demo2" class="tab-pane container-fluid fade">
+                    <div class="col2" style="margin-top:10%;margin-left: 11%;width:100%">
+                        
+                            <h1 class="display-4 text-center">Result</h1>
+                            <hr class="hr" color="black">
+                        <div class="row">
+                            <div class="col-sm-6" style="font-size:25px;">
+                               SEM1 :   <a href="Screenshot_20230301_204820.pdf"><img src="../Assets/Images/Screenshot_20230301_204820.png" target="_blank" height="340px" width="450px" style="border-radius:10px;"></a>
+                            </div>
+                            <div class="col-sm-6" style="font-size:25px;">
+                                SEM2 :  <a href="Screenshot_20230301_204820.pdf"><img src="../Assets/Images/Screenshot_20230301_204820.png" target="_blank" height="340px" width="450px" style="border-radius:10px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="tab-content">
+                <div id="demo3" class="tab-pane container-fluid fade">
+                    <div class="col2" style="margin-top:32%;margin-left: 26%;width:70%;">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h1>Click here to see Notes:</h1>
+                            </div>
+                            <div class="col-sm-3" style="margin-top:1%;">
+                                <a href="note.html"><button class="justify-content-center c2">Click</button></a>
+                            </div>    
+                    </div>
+                </div>  
+            </div>
+            <div class="tab-content">
+                <div id="demo4" class="tab-pane container-fluid fade">
+                    <div class="col2" style="margin-top:32%;margin-left: 26%;width:70%;">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h1>Click here to see Videos:</h1>
+                            </div>
+                            <div class="col-sm-3" style="margin-top:1%;">
+                                <a href="videos.html"><button class="justify-content-center c2">Click</button></a>
+                            </div>    
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

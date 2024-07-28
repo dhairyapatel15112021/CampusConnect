@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10fc4481de.js" crossorigin="anonymous"></script>
+    <link href="../Css/grp prj.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            position: relative;
+        }
+
+        .line {
+            background-color: white;
+        }
+
+        .size {
+            font-size: 20px;
+            padding: 0px;
+        }
+
+        .col1 {
+            background-color: #EFEFEF;
+            width: 50%;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .col2 {
+            background-color: #EFEFEF;
+            width: 50%;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .b2 {
+            border: 2px solid #0072b1;
+            background-color: white;
+            margin-right: 5px;
+            border-radius: 7px;
+            height: 40px;
+            font-size: 18px;
+            padding: 7px 20px;
+            font-weight: bold;
+            color: #0072b1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .b2:hover {
+            border: 3px solid white;
+            color: white;
+            background-color: #0072b1;
+        }
+
+        .img {
+            margin: 5% 0%;
+            background-color: white;
+        }
+
+        .line2 {
+            padding: 10px 20px 10px 20px;
+            border-bottom: 4px solid white;
+        }
+
+        .line2:hover {
+            border-bottom: 4px solid #0072b1;
+        }
+
+        .a {
+            color: white;
+        }
+
+        .a:hover {
+            color: white;
+        }
+
+        .hr {
+            color: black;
+            padding: 1px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .desin {
+            background-color: #5bb9ec;
+            border-radius: 30px;
+
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-pills .nav-link {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="row">
+        <div class="col-sm-3" style="width:20%;height:100vh;background-color:white">
+            <div class="container-fluid">
+                <ul class="nav nav-pills flex-column align-items-center justify-content-center">
+                    <div style="margin-left:7%;margin-bottom:4%;">
+                        <div class="img">
+                            <img src="../Assets/Images/logo.png" style="height:50px;margin-bottom:5%;" />
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link active size" data-bs-toggle="pill" href="#demo1"
+                                style="color: #0072b1;">Personal Details</a>
+                        </li>
+                    </div>
+                    <div class="line2">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link size" data-bs-toggle="pill" href="#demo2"
+                                style="color: #0072b1;">Corporate Details</a>
+                        </li>
+                    </div>
+                    <div class="line2" style="margin-bottom:70%;">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link size" data-bs-toggle="pill" href="#demo6"
+                                style="color: #0072b1;">Uploads</a>
+                        </li>
+                    </div>
+
+                    <div style="margin-top:100%;">
+                        <a href="grp prj.html" class="no-line"><button class="b2 size"
+                                style="width:100%;margin-left:6%;">LOG
+                                OUT</button></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="tab-content">
+                <div id="demo1" class="tab-pane container-fluid active show fade">
+                    <div class="col1" style="margin-top:17%;margin-left: 19%;width:70%">
+                        <h1 class="display-4 text-center" style="font-weight: bold;">Personal Details</h1>
+                        <hr class="hr" color="black">
+                        <div style="font-size:25px;font-weight:300;">
+                            <span style="font-weight: 500;">Name :</span> Archie Andrews
+                        </div>
+                        <div style="font-size:25px;font-weight:300;">
+                            <span style="font-weight:500;">Age :</span> 35
+                        </div>
+                        <div style="font-size:25px;font-weight:300;">
+                            <span style="font-weight: 500;">Gender :</span> Male
+                        </div>
+                        <div style="font-size:25px;font-weight:300">
+                            <span style="font-weight: 500;">Address :</span> A/104, Maple Tree, Thaltej, Ahmedabad
+                        </div>
+                        <div style="font-size:25px;font-weight:300;">
+                            <span style="font-weight: 500;">Qualification :</span> MTech
+                        </div>
+                        <div style="font-size:25px; font-weight:300;">
+                            <span style="font-weight: 500;">Graduated in Year :</span> 2018
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="demo2" class="tab-pane container-fluid fade">
+                    <div class="col2" style="margin-top:19%;margin-left: 19%;width:70%">
+
+                        <h1 class="display-4 text-center" style="font-weight: bold;">Corporate Details</h1>
+                        <hr class="hr" color="black">
+                        <div style="font-size:25px;font-weight:300">
+                          <span style="font-weight: 500;">Date :</span> 01/01/2021
+                        </div>
+                        <div style="font-size:25px;font-weight:300">
+                          <span style="font-weight: 500;">Experience :</span> 2 years
+                        </div>
+                        <div style="font-size:25px;font-weight:300">
+                          <span style="font-weight: 500;">Salary Grade :</span> A Grade
+                        </div>
+                        <div style="font-size:25px;font-weight:300">
+                           <span style="font-weight: 500;">Faculty ID :</span>  38931456
+                        </div>
+                        <div style="font-size:25px;font-weight:300">
+                           <span style="font-weight: 500;">Subject Teaching :</span> Python
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="demo6" class="tab-pane container-fluid fade">
+                    <h1 class="text-center" style="font-weight:bold;margin-top:4%;text-decoration:underline;text-underline-offset:10px" >Video Uploads</h1>
+                    <div class="row" style="margin-top: 4%;">
+                        <div class="col-sm-4">
+                            <video height="200" width="300" controls loop>
+                                <source src="https://res.cloudinary.com/dr8w2gb6b/video/upload/v1722140001/library-818_k4tyc2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-sm-4">
+                            <video height="200" width="300" controls loop>
+                                <source src="https://res.cloudinary.com/dr8w2gb6b/video/upload/v1722140030/computer-1311_e970ks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-sm-4" style="margin-top:8%;padding-left:5%;padding-right:0%;">
+                            <input type="file" value="Choose File">
+                        </div>
+                    </div>
+                    <h1 class="text-center" style="font-weight:bold;margin-top: 4%;text-decoration:underline;text-underline-offset:10px">Notes Uploads</h1>
+                    <div class="row" style="margin-top: 4%;">
+                        <div class="col-sm-4">
+                            <a href="../Assets/Pdf/Chapter-1 Introduction to Web and Web design.pdf"><img
+                                    src="../Assets/Images/ch-1.jpg" height="250" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="../Assets/Pdf/Chapter-1 Introduction to Web and Web design.pdf"><img
+                                    src="../Assets/Images/ch-1.jpg" height="250" /></a>
+                        </div>
+                        <div class="col-sm-4" style="margin-top:8%;padding-left:5%;padding-right:0%;">
+                            <input type="file" value="Choose File">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

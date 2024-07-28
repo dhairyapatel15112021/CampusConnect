@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10fc4481de.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            position: relative;
+        }
+
+        .line {
+            background-color: white;
+        }
+
+        .size {
+            font-size: 20px;
+            padding: 0px;
+        }
+
+        .col1 {
+            background-color: #EFEFEF;
+            height: 100% !important;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        th {
+            font-weight: 500;
+        }
+
+        td {
+            font-weight: 300;
+        }
+
+
+        .b2 {
+            border: 2px solid #0072b1;
+            background-color: white;
+            margin-right: 5px;
+            border-radius: 7px;
+            height: 40px;
+            font-size: 18px;
+            padding: 7px 20px;
+            font-weight: bold;
+            color: #0072b1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+        }
+
+        .b2:hover {
+            border: 3px solid white;
+            color: white;
+            background-color: #0072b1;
+        }
+
+        .img {
+            padding-right: 27px;
+            padding-left: 27px;
+            padding-top: 4px;
+            background-color: white;
+        }
+
+        .space {
+            margin-top: 3px;
+            margin-left: 850px;
+        }
+
+        .line1 {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .line1:hover {
+            border-bottom: 4px solid #0072b1;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .a {
+            color: #0072b1;
+        }
+
+        .a:hover {
+            color: #0072b1;
+        }
+
+        .hr {
+            color: black;
+            padding: 1px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .desin {
+            background-color: #5bb9ec;
+        }
+
+        .space2 {
+            margin-top: 3px;
+            margin-left: 80%;
+        }
+
+        .c {
+            text-decoration: none;
+            color: #0072b1;
+        }
+
+        .c:hover {
+            color: white;
+        }
+
+        @media only screen and (max-width:576px) {
+            .space2 {
+                margin-left: 0%;
+                margin-bottom: 2%;
+            }
+
+            .size2 {
+                width: max-content;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm size fixed-top" style="background-color: white;">
+        <div class="container">
+            <div class="img">
+                <img src="../Assets/Images/logo.png" style="height:50px;" />
+            </div>
+            <button class="navbar-toggler line" data-bs-toggle="collapse" data-bs-target="#demo20">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="demo20">
+                <ul class="navbar-nav">
+                    <div class="line1">
+                        <li class="nav-item" style="width: max-content;">
+                            <a class="nav-link a" href="student details.html">Details</a>
+                        </li>
+                    </div>
+                </ul>
+                <div class="d-flex space2 size2">
+                    <button class="b2"  style="display:flex;justify-content:center;align-items:center;"><a href="grp prj.html"
+                            class="c">LOG OUT</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <div class="col1" style="margin:auto;width:75%;">
+            <h1 class="display-4 text-center" style="font-weight: bold;">Time Table</h1>
+            <hr class="hr" color="black">
+            <table class="table desin table-bordered text-center" style="width:100%;">
+                <tr>
+                    <th rowspan="2">Day/Period</th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th rowspan="2">10:45-11:30 am</th>
+                    <th>III</th>
+                    <th>IV</th>
+                </tr>
+                <tr>
+                    <th>8:45-9:45 am</th>
+                    <th>9:45-10:45 am</th>
+                    <th>11:30-12:30 pm</th>
+                    <th>12:30-1:30 pm</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>FSD-1</td>
+                    <td>FSD-1</td>
+                    <th rowspan="8" class="break">BREAK</th>
+                    <td>CI</td>
+                    <td>DE</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>PYTHON-1</td>
+                    <td>PYTHON-1</td>
+                    <td>ETC</td>
+                    <td>PS</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>PS</td>
+                    <td>PS</td>
+                    <td>FSD-1</td>
+                    <td>FSD-1</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>DE</td>
+                    <td>ETC</td>
+                    <td>PYTHON-1</td>
+                    <td>PYTHON-1</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>FSD-1</td>
+                    <td>FSD-1</td>
+                    <td>DE</td>
+                    <td>DE</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td>PYTHON-1</td>
+                    <td>PYTHON-1</td>
+                    <td>PS</td>
+                    <td>PS</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <div>
+        <div class="col1" style="margin:auto;width:75%;height:450px;">
+            <h1 class="display-4 text-center" style="font-weight: bold;">Academic Calendar</h1>
+            <hr class="hr" color="black">
+            <div>
+                <img class="mx-auto d-block" src="../Assets/Images/tt.png" alt="img" style="width:100%;" />
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>

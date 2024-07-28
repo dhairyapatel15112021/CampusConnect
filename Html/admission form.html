@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10fc4481de.js" crossorigin="anonymous"></script>
+
+    <script>
+        function validate(){
+            val1=/^[A-z_]+$/;
+            val2=document.f1.t1.value;
+            if(val1.test(val2))
+            {
+                alert("Name is valid")
+            }
+            else
+            {
+                alert("Name is not valid")
+            }
+
+            val3=/^\d{10}$/;
+            val4=document.f1.t2.value;
+            if(val3.test(val4))
+            {
+                alert("Contact No is valid");
+            }
+            else{
+                alert("Contact No is not valid")
+            }
+
+            val5=/^\w+([\.-/])?\w)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            val6=document.f1.t3.value;
+            if(val5.test(val6))
+            {
+                alert("Email Id is valid");
+            }
+            else{
+                alert("Email Id is not valid")
+            }
+        }
+        
+        function fun1(){
+            alert(hello)
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@600&display=swap');
+       
+        body
+        {
+            font-family:'Source Sans Pro', sans-serif;
+            background-image:linear-gradient(to bottom,#0072b1,rgb(228, 220, 220));  
+        }
+        .div
+        {
+            width:50%;
+            margin:auto;
+            margin-top:3%;
+            border-radius:8px;
+            background: white;
+        }
+        input[type='text']
+        {
+            
+            border:2px solid grey;
+            border-radius:6px;  
+            margin-left:7%;
+        }
+        input[type='tel']
+        {
+            
+            border:2px solid grey;
+            border-radius:6px;  
+            margin-left:7%;
+        }
+        input[type='email']
+        {
+            
+            border:2px solid grey;
+            border-radius:6px;  
+            margin-left:7%;
+        }
+        label
+        {
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="min-height: 95vh;">
+        <div class="container-xs div" style="padding-top:3%;padding-bottom:3%">
+            <div class="row">
+                <h1 class="container-xs" align="center" >New Candidate Registration</h1>
+            </div>
+            <hr>
+            <form action="#" id="f1" class="needs-validation" onsubmit="validate()">
+                <h4 style="margin-left:5%;">Personal Information</h4><hr style="width:88.5%; margin-left: 5%;">
+                <div class="container-xs">
+                    <div class="row">
+                        <input type="text" id="t1" class="form-control" placeholder="Name" style="width:85%;" required>
+                    </div>
+                    <div class="row" style="margin-top: 2%;">
+                        <div class="col-2" style="padding-left:7%">
+                            <label>Gender:</label>
+                        </div>
+                        <div class="col-10 mt-1">
+                            <div class="form-check-label">
+                               <input type="radio" class="form-check-input" name="gender">Male
+                                <input type="radio" class="form-check-input" name="gender" style="margin-left:20px;">Female
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top:2%;">
+                        <div class="col-3" style="padding-left:7%;padding-top:1%">
+                            <label class="form-label">Nationality</label>
+                        </div>
+                        <div class="col-9 mt-1">
+                            <select class="form-select w-50" required="required">
+                                <option selected disabled hidden value="">--Select Country--</option>
+                                <optgroup label="Country">
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>Russia</option>
+                                </optgroup>
+                            </select>
+                        </div>  
+                    </div>
+
+
+                    <div class="row" style="margin-top:2%">
+                        <div class="col-3" style="padding-left:7%"><label>Date Of Birth</label></div>
+                        <div class="col-9">
+                        <input type="date" class="form-control w-50" required>
+                    </div>
+                </div>
+                
+
+                <br><br>
+                <h4 style="margin-left:5%;">Contact Details</h4><hr style="width:88.5%; margin-left: 5%;">
+                <div class="container-xs">
+                    <div class="row">
+                        <input type="text" id="t2" class="form-control" placeholder="Contact No" style="width:65%;" required>
+                    </div>
+
+                    <div class="row">
+                        <input type="text" id="t3" class="form-control" placeholder="Email Id" style="width:65%;margin-top:3%" required>
+                    </div>
+                </div>
+
+                <br><br>
+                <h4 style="margin-left:5%;">Education Qualifications</h4><hr style="width:88.5%; margin-left: 5%;">
+                <div class="container-xs">
+                    <div class="col-12 mt-1" style="padding-left:6%;">
+                        <select class="form-select w-50" required="required" >
+                            <option selected disabled hidden value="">Qualifications</option>
+                                <option>SSC</option>
+                                <option>HSC</option>
+                                <option>Graduate</option>
+                                <option>Post-Graduate</option>
+                        </select>
+                    </div>  
+                </div>
+                <br><br>
+
+                <hr style="width:88.5%; margin-left: 5%;">
+                <div class="container-xs">
+                    <div class="col-3 mt-1" style="padding-left:6%">
+                        <input type="submit" id="t4" value="Submit">
+                        <input type="reset" id="t5" value="Reset">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

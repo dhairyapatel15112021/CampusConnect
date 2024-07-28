@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10fc4481de.js" crossorigin="anonymous"></script>
+    
+    <link href="../Css/grp prj.css" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        var loader;
+        function loadNow(opacity) {
+            if (opacity <= 0) {
+                 displayContent();
+            } 
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                loadNow(opacity - 1);
+            }, 4000);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+});
+    </script>
+</head>
+<body class="font-style" data-bs-spy="scroll">
+        <div id="loader">
+        <video autoplay loop muted style="height: 230px; width:330px ;margin-left:580px;margin-top: 250px;">
+                <source src="https://res.cloudinary.com/dr8w2gb6b/video/upload/v1722139926/loader.mp4" type="video/mp4">
+        </video> 
+        </div>
+        <nav class="navbar navbar-expand-lg size fixed-top p-1" style="background-color:white;width:100%;">
+            <div class="container-fluid">
+                <div class="img">
+                    <img src="../Assets/Images/logo.png" style="height:50px;"/>
+                </div>
+                <button class="navbar-toggler line" data-bs-toggle="collapse" data-bs-target="#demo">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="demo">
+                    <ul class="navbar-nav me-auto">
+                        <div class="mar">
+                            <li class="nav-item">
+                                <a class="nav-link a" style="color:#0072b1;" href="#">Home</a>
+                            </li>
+                        </div>
+                        <div class="mar">
+                            <li class="nav-item">
+                                <a class="nav-link a" style="color:#0072b1;" href="#demo4">Institutes</a>
+                            </li>
+                        </div>
+                        <div class="mar">
+                            <li class="nav-item">
+                                <a class="nav-link a" style="color:#0072b1;" href="#demo6">Placements</a>
+                            </li>
+                        </div>
+                        <div class="mar">
+                            <li class="nav-item">
+                                <a class="nav-link a" style="color:#0072b1;" href="#demo2">Events</a>
+                            </li>
+                        </div>
+                        <div class="mar">
+                            <li class="nav-item">
+                                <a class="nav-link a" style="color:#0072b1;" href="adm_form.html">Admissions</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="d-flex gap">
+                        <a href="form.html" class="no-line"><button class="b">Faculty</button></a>
+                        <a href="form2.html" class="no-line"><button class="b">Student</button></a>
+                    </div>
+            </div>
+        </nav>
+    <video height="100%"width="100%" autoplay loop muted style="margin: 54px 0 0 0;">
+        <source class="vid" src="https://res.cloudinary.com/dr8w2gb6b/video/upload/v1722140020/clg_video_cx4cg4.mov" type="video/mp4">
+    </video>
+    <section class="back-img mx-auto d-block"></section>
+    <section class="sect1">
+        LJ Group of Institutes is managed by Lok Jagruti Kendra (LJK), a Charitable Trust and a Registered Society established in 1980 by eminent academicians and visionaries like Prof. B.M. Peerzada, former Dean of Commerce Faculty,Gujarat University, Padma Bhushan Lord Meghnad Desai (London School of Economics ), Prof. Gautam Appa (LSE), Late Prof. M.S. Trivedi, former Vice Chancellor, South Gujarat University, renowned jurist Late Shri Girishbhai Patel and Shri Subodhbhai Shah. It was envisioned as “a key player in education and social development by promoting and nurturing creativity, scholarship, innovation and excellence through a chain of quality institutes.”  LJK’s mission has been “to establish and manage institutions with an environment in which new ideas, delivery strategies and scholarship flourish and from where leaders and innovators of tomorrow shall emerge.”
+    </section>
+    <div class="row p-1" id="demo4">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <video width="100%" height="100%" class="vid" autoplay loop muted>
+                <source src="https://res.cloudinary.com/dr8w2gb6b/video/upload/v1721403086/video_5.mp4" type="video/mp4">
+            </video>
+        </div>  
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 set">
+            <h1 class="display-4 text-center inst">Institutes at the University</h1>
+            <ul type="disc">
+                <a href="engineering.html" class="no-line"><li class="inst1 text-primary">Engineering</li></a>
+                <a href="archi1.html" class="no-line"><li class="inst1 text-primary">Architecture</li></a>
+                <a href="law.html" class="no-line"><li class="inst1 text-primary">Law</li></a>
+                <a href="commerce.html" class="no-line"><li class="inst1 text-primary">Commerce</li></a>
+                <a href="applied_Sci.html" class="no-line"><li class="inst1 text-primary">Applied Science</li></a>
+                <a href="pharma.html" class="no-line"><li class="inst1 text-primary">Pharmacy</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="row p-2" id="demo6">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 sect1">
+            <p class="display-4 text-center inst">Placements</p>
+            <p class="inst5">LJ Career Development Services has a dedicated and centralized training and placement cell across the LJ Group of Institutes - LJ INDUSTRY INTERACTION & PLACEMENT CELL (LJIIPC).
+                The Objective of the IIPC is to reduce the gap between industry expectations (practice) and academic offerings (theory) by direct involvement of industry to attain symbiosis.</p>
+            <a href="placement.html" class="no-line inst4">Read More<i class="fa-solid fa-arrow-right-long i1"></i></a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-1">
+            <img src="../Assets/Images/lj2.jpg" style="height:100%;width:100%;margin-left:0px;" class="vid"/>
+        </div>
+    </div>
+
+    <div class="row p-2" id="demo2">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <img src="../Assets/Images/lj3.jpg" style="height:100%;width:100%;margin-left:0px;" class="vid"/>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <h1 class="display-4 text-center inst">Events</h1>
+            <p class="inst6">Co-circular activities play a vital role in the life of students, read on to know how. With encouraging cultural programs, LJ gives platform to students who want to showcase their talents in front of their friends and other dignitaries which boosts their confidence and remove the stage fear. Every year students perform various culture activities including their respective annual functions at LJ open air amphitheaterat the campus.</p>
+            <a href="carousel try.html" class="no-line inst2">Read More<i class="fa-solid fa-arrow-right-long i1"></i></a>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <h1 class="display-3 text-center inst">Admissions</h1>
+        <br>
+        <div class="accordion" id="acc">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordion-item  justify-content-end m-3">
+                        <div class="accordion-header " id="h1">
+                            <button class="accordion-button collapsed size2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <img src="../Assets/Images/technology.png" style="height:50px;margin-right:4%;" />Engineering
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="h1"
+                            data-bs-parent="#acc">
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    BTech Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger" style="margin-left:45%">CLOSED</button>
+                                </div>
+                            </div>
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    MTech Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger" style="margin-left:44.5%">CLOSED</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordion-item m-3">
+                        <div class="accordion-header" id="h2">
+                            <button class="accordion-button collapsed size2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                <img src="../Assets/Images/ruler.png" style="height:50px;margin-right:4%;" /> Architecture
+                            </button>
+                        </div>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="h2"
+                            data-bs-parent="#acc">
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    BArch Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger btn-danger text-white"
+                                        style="margin-left:48%">OPEN</button>
+                                </div>
+                            </div>
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    MArch Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger btn-danger text-white"
+                                        style="margin-left:47.5%">OPEN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordion-item m-3">
+                        <div class="accordion-header" id="h3">
+                            <button class="accordion-button collapsed size2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                <img src="../Assets/Images/medicines.png" style="height:50px;margin-right:4%;" />Pharmacy
+                            </button>
+                        </div>
+                        <div id="collapse3" class="accordion-collapse collapse " aria-labelledby="h3"
+                            data-bs-parent="#acc">
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    BPharm Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger btn-danger text-white"
+                                        style="margin-left:48%">OPEN</button>
+                                </div>
+                            </div>
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    MPharm Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger btn-danger text-white"
+                                        style="margin-left:48%">OPEN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordion-item m-3">
+                        <div class="accordion-header" id="h4">
+                            <button class="accordion-button collapsed size2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                <img src="../Assets/Images/applied.png" style="height:50px;margin-right:4%;" /> Applied Science
+                            </button>
+                        </div>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="h4"
+                            data-bs-parent="#acc">
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    BSc Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger" style="margin-left:45%">CLOSED</button>
+                                </div>
+                            </div>
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    MSc Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger" style="margin-left:45%">CLOSED</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordion-item m-3">
+                        <div class="accordion-header" id="h5">
+                            <button class="accordion-button collapsed size2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                <img src="../Assets/Images/mace.png" style="height:50px;margin-right:4%;" />Laws
+                            </button>
+                        </div>
+                        <div id="collapse5" class="accordion-collapse collapse " aria-labelledby="h5"
+                            data-bs-parent="#acc">
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    LLB Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger" style="margin-left:45%">CLOSED</button>
+                                </div>
+                            </div>
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    LLM Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger" style="margin-left:44.5%">CLOSED</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordion-item m-3">
+                        <div class="accordion-header" id="h6">
+                            <button class="accordion-button collapsed size2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                <img src="../Assets/Images/business.png" style="height:50px;margin-right:4%;" />Commerce
+                            </button>
+                        </div>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="h6"
+                            data-bs-parent="#acc">
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    B.Com Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger btn-danger text-white"
+                                        style="margin-left:48%">OPEN</button>
+                                </div>
+                            </div>
+                            <div class="accordion-body row">
+                                <div class="col-sm-8">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    M.Com Admissions 2023
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-outline-danger btn-danger text-white"
+                                        style="margin-left:47.5%">OPEN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row foot" style="width:100.8%;">
+        <div class="col-sm-7 col-lg-9 col-md-8 foot2" style="padding:1% 0% 0% 7%;">
+            <img src="../Assets/Images/logo.png" style="height:50px;padding-bottom:1%;"/>
+        </div>
+        <div class="col-sm-5 col-lg-3 col-md-4 foot2" style="padding:0% 0% 0% 8%;">
+            <div class="row">
+                <div class="col-12" style="padding-top:2.5%;">
+                    <a href="#"><img src="../Assets/Images/logo3.webp" height="40px;"/></a>
+                    <a href="#"><img src="../Assets/Images/logo4-removebg-preview.png" height="50px;"/></a>
+                    <a href="#"><img src="../Assets/Images/logo5.png" height="38px;"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clr">
+        <div class="row pad">
+            <div class="col-sm-3 line2">
+                <div class="text-center event">
+                    Gallery
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Photos</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Videos</a>
+                </div>
+            </div>
+            <div class="col-sm-3 line2">
+                <div class="text-center event">
+                    Events
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Event-2022</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Event-2021</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Event-2020</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Event-2019</a>
+                </div>
+            </div>
+            <div class="col-sm-3 line2">
+                <div class="text-center event">
+                    Placements
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Placements-2022</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Placements-2021</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Placements-2020</a>
+                </div>
+                <div class="text-center text-white">
+                    <a href="#" class="a5">Placements-2019</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="text-center event">
+                    Contact
+                </div>
+                <div class="text-center text-white">
+                    Near Sanand-Sarkhej Circle
+                </div>
+                <div class="text-center text-white">
+                    Opp. S.G.Road, Ahmedabad-382210
+                </div>
+                <div class="text-center text-white">
+                    Email : info@ljku.edu.in
+                </div>
+                <div class="text-center text-white">
+                    Phone : 18001210082
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lastfoot text-center">
+        &copy;LJ University, All Rights Reserved.
+    </div>
+    
+</body>
+</html>
